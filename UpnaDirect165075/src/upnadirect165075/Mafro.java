@@ -14,7 +14,7 @@ public class Mafro implements Aseguradora{
     private final String nombre;
     
     public Mafro() {
-        this.nombre = "Mafro";
+        this.nombre = "MAFRO";
     }
     
     @Override

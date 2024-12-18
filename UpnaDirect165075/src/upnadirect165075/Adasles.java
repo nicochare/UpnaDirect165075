@@ -14,7 +14,7 @@ public class Adasles implements Aseguradora {
     private final String nombre;
     
     public Adasles() {
-        this.nombre = "Adasles";
+        this.nombre = "ADASLES";
     }
     
     @Override

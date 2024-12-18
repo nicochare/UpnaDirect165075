@@ -14,7 +14,7 @@ public class LineaIndirecta implements Aseguradora{
     private final String nombre;
     
     public LineaIndirecta() {
-        this.nombre = "LineaIndirecta";
+        this.nombre = "LINEAINDIRECTA";
     }
     
     @Override
