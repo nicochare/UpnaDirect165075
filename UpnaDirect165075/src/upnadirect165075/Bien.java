@@ -9,18 +9,8 @@ package upnadirect165075;
  *
  * @author n
  */
-public class Bien {
-    private double valor;
-    
-    public Bien(double valor) {
-        this.valor = valor;
-    }
-    
-    public double devolver_valor() {
-        return this.valor;
-    }
-    
-    private void modificar_valor(float valor) {
-        this.valor = valor;
-    }
+public interface Bien {
+    public double devolver_valor();
+    public void modificar_valor(double valor);
+    Boolean verificar_rango(double valor);
 }

@@ -9,14 +9,25 @@ package upnadirect165075;
  *
  * @author n
  */
-public class Vivienda extends Bien {
+public class Vivienda implements Bien {
+    private double valor;
     private final double valor_min = 50000;
-    private final double valor_max = -1;
     
     public Vivienda(double valor) {
-        super(valor);
+        this.valor = valor;
     }
     
+    @Override
+    public double devolver_valor() {
+        return this.valor;
+    }
+    
+    @Override
+    public void modificar_valor(double valor) {
+        this.valor = valor;
+    }
+    
+    @Override
     public Boolean verificar_rango(double valor) {
         return (valor >= this.valor_min);
     }
