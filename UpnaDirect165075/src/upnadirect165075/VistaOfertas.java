@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class VistaOfertas {
     private final Scanner scanner = new Scanner(System.in);
     
-    public String pedir_fecha_nacimiento() {
+    public int pedir_fecha_nacimiento() {
         System.out.println("Introduce el año de nacimiento del cliente: ");
-        String fnac = scanner.nextLine();
+        int fnac = scanner.nextInt();
         return fnac;
     }
     

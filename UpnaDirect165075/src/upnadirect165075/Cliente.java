@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package upnadirect165075;
-import java.util.Date;
 import java.util.Calendar;
 
 /**
@@ -13,22 +12,16 @@ import java.util.Calendar;
  */
 public class Cliente {
     private double salario;
-    private Date fecha_nacimiento;
+    private int anioNacimiento;
     
-    public Cliente(double salario, Date fecha) {
+    public Cliente(double salario, int anioNacimiento) {
         this.salario = salario;
-        this.fecha_nacimiento = fecha;
+        this.anioNacimiento = anioNacimiento;
     }
     
     public int calcular_edad() {
         Calendar fechaActual = Calendar.getInstance();
-        
-        Calendar fechaNac = Calendar.getInstance();
-        fechaNac.setTime(this.fecha_nacimiento);
-
-        int edad = fechaActual.get(Calendar.YEAR) - fechaNac.get(Calendar.YEAR);
-        
-        return edad;
+        return fechaActual.get(Calendar.YEAR) - this.anioNacimiento;
     }
     
     public double devolver_salario() {

@@ -8,6 +8,7 @@ package upnadirect165075;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;    
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -51,22 +52,11 @@ public class PresentadorOfertas {
         return min_oferta;
     }
     
-    private Date transformar_string_date(String fecha_string) {
-        Date fecha_date = new Date();
-        SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            fecha_date = formatoFecha.parse(fecha_string);
-        } catch (ParseException e) {
-            this.vista.mostrar_mensaje("[ERROR] Formato de fecha inválido. Use DD/MM/YYYY.\n");
-        }
-        return fecha_date;
-    }
-    
     private Cliente pedir_datos_cliente() {
         Cliente c;
-        String fnac;
-        Date fecha;
+        int anioNac;
         double salario;
+        Calendar fechaActual = Calendar.getInstance();
                 
         
         salario = this.vista.pedir_salario_cliente();
@@ -75,15 +65,12 @@ public class PresentadorOfertas {
             salario = this.vista.pedir_salario_cliente();
         }
         
-        fnac = this.vista.pedir_fecha_nacimiento();
-        fecha = transformar_string_date(fnac);
-
-        while (fecha == null){
-            fnac = this.vista.pedir_fecha_nacimiento();
-            fecha = transformar_string_date(fnac);
+        anioNac = this.vista.pedir_fecha_nacimiento();
+        while (anioNac < 1900 || anioNac > fechaActual.get(Calendar.YEAR)){
+            anioNac = this.vista.pedir_fecha_nacimiento();
         }
         
-        c = new Cliente(salario, fecha);
+        c = new Cliente(salario, anioNac);
         return c;
     }
     
@@ -126,7 +113,8 @@ public class PresentadorOfertas {
 
         Oferta o = seleccionar_mejor_oferta(calcular_ofertas(c,b,aseguradoras));
         
-        String oferta = o.devolver_aseguradora() + " | " + o.devolver_importe() + " | " + o.devolver_comision();
+        String nombre_aseguradora = o.devolver_aseguradora().devolver_nombre();
+        String oferta = nombre_aseguradora + " | " + (int)o.devolver_importe() + " | " + (int)o.devolver_comision();
         this.vista.mostrar_mensaje(oferta);
         
         return oferta;
