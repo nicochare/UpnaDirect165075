@@ -10,12 +10,9 @@ package upnadirect165075;
  * @author n
  */
 public class UpnaDirect165075 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        PresentadorOfertas prOf = new PresentadorOfertas(new VistaOfertas());
+        prOf.ofrecer_oferta_mas_ventajosa();
     }
     
 }
