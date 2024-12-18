@@ -10,7 +10,7 @@ package upnadirect165075;
  * @author n
  */
 public interface Bien {
-    public double devolverValor();
-    public void modificarValor(double valor);
+    double devolverValor();
+    void modificarValor(double valor);
     Boolean verificarRango(double valor);
 }

@@ -16,32 +16,28 @@ public class VistaOfertas {
     
     public int pedirFechaNacimiento() {
         System.out.println("Introduce el año de nacimiento del cliente: ");
-        int fnac = scanner.nextInt();
-        return fnac;
+        return scanner.nextInt();
     }
     
     public Double pedirSalarioCliente() {
         System.out.println("Introduce el salario del cliente: ");
-        Double salario = scanner.nextDouble();
-        return salario;
+        return scanner.nextDouble();
     }
     
     public int pedirTipoBien() {
         System.out.println("Introduce el tipo del bien");
         System.out.println("    - 1: Vehiculo");
         System.out.println("    - 2: Vivienda");
-        int tipo = scanner.nextInt();
-        return tipo;
+        return scanner.nextInt();
     }
     
-    public double pedirValorBien(int tipo_bien) {
-        if (tipo_bien == 1) {
+    public double pedirValorBien(int tipoBien) {
+        if (tipoBien == 1) {
             System.out.println("Introduce el valor del bien (1-50000): ");
         } else {
             System.out.println("Introduce el valor del bien (>=50000): ");
         }
-        Double valor = scanner.nextDouble();
-        return valor;
+        return scanner.nextDouble();
     }
     
     public void mostrarMensaje(String msg) {

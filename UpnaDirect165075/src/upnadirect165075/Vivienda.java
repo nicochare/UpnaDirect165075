@@ -11,7 +11,7 @@ package upnadirect165075;
  */
 public class Vivienda implements Bien {
     private double valor;
-    private final double valor_min = 50000;
+    private final double valorMin = 50000;
     
     public Vivienda(double valor) {
         this.valor = valor;
@@ -29,6 +29,6 @@ public class Vivienda implements Bien {
     
     @Override
     public Boolean verificarRango(double valor) {
-        return (valor >= this.valor_min);
+        return valor >= this.valorMin;
     }
 }

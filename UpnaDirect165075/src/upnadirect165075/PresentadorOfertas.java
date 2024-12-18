@@ -5,11 +5,8 @@
  */
 package upnadirect165075;
 
-import java.text.SimpleDateFormat;
-import java.text.ParseException;    
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,7 +14,7 @@ import java.util.List;
  * @author n
  */
 public class PresentadorOfertas {
-    private VistaOfertas vista;
+    private final VistaOfertas vista;
     
     public PresentadorOfertas(VistaOfertas vista) {
         this.vista = vista;

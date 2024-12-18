@@ -11,8 +11,8 @@ package upnadirect165075;
  */
 public class Vehiculo implements Bien {
     private double valor;
-    private final double valor_min = 1;
-    private final double valor_max = 50000;
+    private final double valorMin = 1;
+    private final double valorMax = 50000;
     
     public Vehiculo(double valor) {
         this.valor = valor;
@@ -30,6 +30,6 @@ public class Vehiculo implements Bien {
     
     @Override
     public Boolean verificarRango(double valor) {
-        return (valor >= this.valor_min && valor <= this.valor_max);
+        return valor >= this.valorMin && valor <= this.valorMax;
     }
 }
