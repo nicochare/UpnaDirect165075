@@ -18,16 +18,16 @@ public class Adasles implements Aseguradora {
     }
     
     @Override
-    public double calcular_importe(Bien b, Cliente c) {
+    public double calcularImporte(Bien b, Cliente c) {
         double porcentaje = 0.02;
-        if (b instanceof Vehiculo && (c.calcular_edad() < 20 || c.calcular_edad() > 60)) {
+        if (b instanceof Vehiculo && (c.calcularEdad() < 20 || c.calcularEdad() > 60)) {
             porcentaje = 0.06;
         }
-        return b.devolver_valor()*porcentaje;
+        return b.devolverValor()*porcentaje;
     }
     
     @Override
-    public int calcular_comision(double importe) {
+    public int calcularComision(double importe) {
         if (importe <= 1000) {
             return (int) floor(importe*0.01);
         } else {
@@ -36,7 +36,7 @@ public class Adasles implements Aseguradora {
     }
     
     @Override
-    public String devolver_nombre() {
+    public String devolverNombre() {
         return this.nombre;
     }
 }

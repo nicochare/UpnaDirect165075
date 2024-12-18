@@ -12,7 +12,7 @@ package upnadirect165075;
 public class UpnaDirect165075 {
     public static void main(String[] args) {
         PresentadorOfertas prOf = new PresentadorOfertas(new VistaOfertas());
-        prOf.ofrecer_oferta_mas_ventajosa();
+        prOf.ofrecerOfertaMasVentajosa();
     }
     
 }

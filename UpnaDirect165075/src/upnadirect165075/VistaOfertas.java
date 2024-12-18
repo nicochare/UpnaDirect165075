@@ -14,19 +14,19 @@ import java.util.Scanner;
 public class VistaOfertas {
     private final Scanner scanner = new Scanner(System.in);
     
-    public int pedir_fecha_nacimiento() {
+    public int pedirFechaNacimiento() {
         System.out.println("Introduce el año de nacimiento del cliente: ");
         int fnac = scanner.nextInt();
         return fnac;
     }
     
-    public Double pedir_salario_cliente() {
+    public Double pedirSalarioCliente() {
         System.out.println("Introduce el salario del cliente: ");
         Double salario = scanner.nextDouble();
         return salario;
     }
     
-    public int pedir_tipo_bien() {
+    public int pedirTipoBien() {
         System.out.println("Introduce el tipo del bien");
         System.out.println("    - 1: Vehiculo");
         System.out.println("    - 2: Vivienda");
@@ -34,7 +34,7 @@ public class VistaOfertas {
         return tipo;
     }
     
-    public double pedir_valor_bien(int tipo_bien) {
+    public double pedirValorBien(int tipo_bien) {
         if (tipo_bien == 1) {
             System.out.println("Introduce el valor del bien (1-50000): ");
         } else {
@@ -44,7 +44,7 @@ public class VistaOfertas {
         return valor;
     }
     
-    public void mostrar_mensaje(String msg) {
+    public void mostrarMensaje(String msg) {
         System.out.println(msg);
     }
 }

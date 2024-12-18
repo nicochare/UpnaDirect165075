@@ -10,7 +10,7 @@ package upnadirect165075;
  * @author n
  */
 public interface Aseguradora {
-    public double calcular_importe(Bien b, Cliente c);
-    public int calcular_comision(double importe);
-    public String devolver_nombre();
+    public double calcularImporte(Bien b, Cliente c);
+    public int calcularComision(double importe);
+    public String devolverNombre();
 }

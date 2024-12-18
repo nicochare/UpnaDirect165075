@@ -24,23 +24,23 @@ public class Oferta {
         this.cliente = c;
     }
     
-    public double devolver_importe() {
+    public double devolverImporte() {
         return this.importe;
     }
     
-    public float devolver_comision() {
+    public float devolverComision() {
         return this.comision;
     }
     
-    public Aseguradora devolver_aseguradora() {
+    public Aseguradora devolverAseguradora() {
         return this.aseguradora;
     }
     
-    public Bien devolver_bien() {
+    public Bien devolverBien() {
         return this.bien;
     }
     
-    public Cliente devolver_cliente() {
+    public Cliente devolverCliente() {
         return this.cliente;
     }
 }

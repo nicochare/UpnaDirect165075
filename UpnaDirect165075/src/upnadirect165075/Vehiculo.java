@@ -19,17 +19,17 @@ public class Vehiculo implements Bien {
     }
     
     @Override
-    public double devolver_valor() {
+    public double devolverValor() {
         return this.valor;
     }
     
     @Override
-    public void modificar_valor(double valor) {
+    public void modificarValor(double valor) {
         this.valor = valor;
     }
     
     @Override
-    public Boolean verificar_rango(double valor) {
+    public Boolean verificarRango(double valor) {
         return (valor >= this.valor_min && valor <= this.valor_max);
     }
 }

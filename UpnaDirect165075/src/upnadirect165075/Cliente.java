@@ -19,12 +19,12 @@ public class Cliente {
         this.anioNacimiento = anioNacimiento;
     }
     
-    public int calcular_edad() {
+    public int calcularEdad() {
         Calendar fechaActual = Calendar.getInstance();
         return fechaActual.get(Calendar.YEAR) - this.anioNacimiento;
     }
     
-    public double devolver_salario() {
+    public double devolverSalario() {
         return this.salario;
     }
 }
