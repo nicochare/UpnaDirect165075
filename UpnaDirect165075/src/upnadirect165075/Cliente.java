@@ -12,10 +12,10 @@ import java.util.Calendar;
  * @author n
  */
 public class Cliente {
-    private float salario;
+    private double salario;
     private Date fecha_nacimiento;
     
-    public Cliente(float salario, Date fecha) {
+    public Cliente(double salario, Date fecha) {
         this.salario = salario;
         this.fecha_nacimiento = fecha;
     }
@@ -31,7 +31,7 @@ public class Cliente {
         return edad;
     }
     
-    public float devolver_salario() {
+    public double devolver_salario() {
         return this.salario;
     }
 }
