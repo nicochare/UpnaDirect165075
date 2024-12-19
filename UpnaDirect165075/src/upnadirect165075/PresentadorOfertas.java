@@ -97,16 +97,23 @@ public class PresentadorOfertas {
         
         return b;
     }
-    
-    public String ofrecerOfertaMasVentajosa() {
-        Cliente c = pedirDatosCliente();
-        Bien b = pedirDatosBien();
-        
+
+    private List<Aseguradora> obtenerListaAseguradoras() {
         List<Aseguradora> aseguradoras = new ArrayList<>();
         aseguradoras.add(new Mafro());
         aseguradoras.add(new Adasles());
         aseguradoras.add(new LineaIndirecta());
-
+        return aseguradoras;
+    }
+    
+    public String ofrecerOfertaMasVentajosa() {
+        Cliente c = pedirDatosCliente();
+        Bien b = pedirDatosBien();
+        return ofrecerOfertaMasVentajosa(c, b);
+    }
+    
+    public String ofrecerOfertaMasVentajosa(Cliente c, Bien b) {
+        List<Aseguradora> aseguradoras = obtenerListaAseguradoras();
         Oferta o = seleccionarMejorOferta(calcularOfertas(c,b,aseguradoras));
         
         String nombreAseguradora = o.devolverAseguradora().devolverNombre();
