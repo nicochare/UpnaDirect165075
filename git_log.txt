@@ -1,0 +1,99 @@
+commit 98326973f4a302c341306911341c786c58497076
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 21:12:47 2024 +0100
+
+    refactor: eliminacion de code smells
+    
+    Este commit incluye las ultimas modificaciones para eliminar más code smells.
+
+commit 0221bdfed86afdff86c488b7cc0a0f31040703a4
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 21:05:08 2024 +0100
+
+    style: cambiar vars y funciones a camelCase
+    
+    Este commit contiene el cambio de todas las variables y funciones a camelCase.
+
+commit ca9411c69d8d61be8e92a4a2ff66a120e88a8f08
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 20:49:43 2024 +0100
+
+    feat: añadir logica programa principal
+    
+    Este commit incluye la logica del programa principal que ejecuta el presentador.
+
+commit ecb709b5ab96a7cad8161cd6d828550ce4c7f6ea
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 20:48:53 2024 +0100
+
+    refactor: cambiar nombre aseguradoras
+    
+    Este commit incluye el cambio de nombres de aseguradoras a mayusculas para cumplir con el formato deseado.
+
+commit 5fb2026eab4930bb34fcd2c9abe94af6dc86c758
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 20:48:16 2024 +0100
+
+    fix: fix cálculo edad erroneo
+    
+    Este commit arregla el cálculo de la edad que esta erróneo, ya que este calculaba con la fecha estilo "DD/MM/YYYY" y debía calcular anioActual - anioNacimiento
+
+commit 417a84514265834fc9605c629d0e3c7253bb5b9b
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 20:36:59 2024 +0100
+
+    feat: añadir implementacion ofertas
+    
+    Este commit incluye la implementacion del tipo oferta, y las clases PresentadorOfertas y VistaOfertas, siguiendo el patrón de arquitectura Modelo-Vista-Presentador
+
+commit 051c831ebb73d6a6b6e76a1bdfe8f9aa8ad8bca6
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 20:23:41 2024 +0100
+
+    refactor: cambiar Bien a polimorfismo
+
+commit 300f68b7ee50e14a2a892c745ff3e3bb9c611be9
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:59:56 2024 +0100
+
+    refactor(Cliente): cambiar float a double en salario
+    
+    Este commit cambiará el tipo de dato del atributo salario de float a double.
+
+commit 33c41254ecbc6b18d2ba08cefa841070f4eda5eb
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:24:50 2024 +0100
+
+    feat: añadir clase cliente
+    
+    Este commit incluye la clase cliente.
+
+commit dd6efa5e3a598cf52e6916d6081037499052489a
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:23:42 2024 +0100
+
+    feat: añadir implementacion de bienes
+    
+    Este commit incluye la implementacion de los bienes Vehiculo y Vivienda, con su clase padre "Bien"
+
+commit 35baecaeb1a22af4e985105ec1cdde30a125286c
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:22:15 2024 +0100
+
+    feat: añadir implementacion aseguradoras
+    
+    Este commit contiene el código necesario para implementar las aseguradoras Mafro, LineaDirecta y Adasles con su interface "Aseguradora".
+
+commit daafb4735c66145f9cab39786b7a76cf9121a459
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:19:55 2024 +0100
+
+    ops: creación de proyecto
+    
+    Este commit contendrá el proyecto de NetBeans inicial, con el archivo main ejecutor "UpnaDirect165075.java"
+
+commit 87e1396597aadd757e56eb16f465e8e438d31343
+Author: Nicolás Chareca <55698485+nicochare@users.noreply.github.com>
+Date:   Wed Dec 18 19:13:15 2024 +0100
+
+    Initial commit
